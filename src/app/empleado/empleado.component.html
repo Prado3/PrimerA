@@ -1,0 +1,15 @@
+<p>Nombre: {{nombre}}</p>
+<p>Apellido: {{apellido}}</p>
+<p>Edad: {{18 > edad ? "es mayor" : "es menor"}}</p>
+<p>Empresa: {{empresa.value}}</p>
+
+Introduce la empresa: <input type="text" #empresa (keyup)="0" [disabled]="habilitacionCuadro">
+
+<br/>
+<br/>
+
+Registrado: <input type="checkbox" id="registro" [checked]="usuRegistrado"/>
+
+{{getRegistroUsuario()}}
+
+
